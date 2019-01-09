@@ -45,6 +45,7 @@
     padding-right: 40px;
     text-decoration: none;
     color: #202020;
+    outline: none;
 
     @include mobile {
       display: none;
@@ -53,6 +54,18 @@
     &:nth-child(2) {
       flex: 1;
       text-align: right;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
