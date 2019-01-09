@@ -1,0 +1,123 @@
+.photography-header-parent {
+  width: 100%;
+  height: 120px;
+
+  @include mobile {
+    height: 50px;
+    padding: 0px 10px;
+  }
+
+  @include tablet {
+    padding: 0px 10px;
+  }
+}
+.photography-header {
+  max-width: $desktop-width;
+  height: auto;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include mobile {
+    padding-top: 10px;
+  }
+
+  .logo {
+    @include mobile {
+      height: 30px;
+    }
+  }
+
+  .menu-image {
+    width: 20px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+
+    @include mobile {
+      display: block;
+      margin-left: auto;
+    }
+  }
+  .links {
+    padding-right: 40px;
+    text-decoration: none;
+    color: #202020;
+
+    @include mobile {
+      display: none;
+    }
+
+    &:nth-child(2) {
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+  .contactus {
+    height: 25px;
+    background: #fdb461;
+    border-radius: 5px;
+    color: #202020;
+    border: none;
+    outline: none;
+    line-height: 23px;
+    cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    background-image: url("../images/mob-background.jpeg");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    display: none;
+    padding-top: 10px;
+
+    .links {
+      text-decoration: none;
+      color: #202020;
+      display: block;
+      padding-top: 20px;
+
+      &:nth-child(2) {
+        flex: 1;
+        text-align: inherit;
+        display: block;
+      }
+    }
+
+    .contactus {
+      width: 100px;
+      height: 25px;
+      background: #fdb461;
+      border-radius: 5px;
+      color: #202020;
+      border: none;
+      outline: none;
+      line-height: 23px;
+      cursor: pointer;
+      display: block;
+      margin-top: 20px;
+    }
+    .cross {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 @import url("normalize.css");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import "./variables";
 @import "./mixins";
 
@@ -12,7 +12,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   color: #202020;
 }
+
+@import "./photography-header";
+@import "./photography-slider";
+@import "./photography-footer";

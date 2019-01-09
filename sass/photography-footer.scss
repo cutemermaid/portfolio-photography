@@ -1,0 +1,37 @@
+.photography-footer-parent {
+  width: 100%;
+  background: #010101;
+
+  @include mobile {
+    padding: 0 10px;
+  }
+  @include tablet {
+    padding: 0px 10px;
+  }
+}
+.photography-footer {
+  max-width: $desktop-width;
+  margin: 0px auto;
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: white;
+
+  .owner-info {
+    flex: 1;
+    .address {
+      font-size: 12px;
+    }
+    .mob {
+      font-size: 14px;
+    }
+  }
+  .social {
+    display: flex;
+    align-items: center;
+
+    img {
+      padding-right: 17px;
+    }
+  }
+}
