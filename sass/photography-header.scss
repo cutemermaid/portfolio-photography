@@ -86,8 +86,6 @@
 
   .menu {
     position: absolute;
-    background-image: url("../images/mob-background.jpeg");
-    background-repeat: no-repeat;
     background-color: #ffffff;
     left: 0px;
     top: 0px;
@@ -103,17 +101,29 @@
       text-decoration: none;
       color: #202020;
       display: block;
-      padding-top: 20px;
+      padding-top: 100px;
 
       &:nth-child(2) {
         flex: 1;
         text-align: inherit;
         display: block;
       }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        font-weight: bold;
+        padding-top: 30px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     .contactus {
-      width: 100px;
       height: 25px;
       background: #fdb461;
       border-radius: 5px;
@@ -123,7 +133,7 @@
       line-height: 23px;
       cursor: pointer;
       display: block;
-      margin-top: 20px;
+      margin-top: 30px;
     }
     .cross {
       position: absolute;

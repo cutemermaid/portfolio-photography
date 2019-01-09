@@ -1,6 +1,6 @@
 # Photography Blog
 
-Theme: Photography
+Theme:Blogging
 
 # Installation
 
