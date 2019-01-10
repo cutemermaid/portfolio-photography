@@ -14,12 +14,26 @@
   .contactusbutton {
     display: flex;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .mapimage {
       flex: 1;
+      height: 400px;
+      width: 100%;
+
+      @include mobile {
+        flex: none;
+      }
     }
     .user-info {
       width: 376px;
       padding: 0 20px;
+
+      @include mobile {
+        width: 100%;
+      }
       h1 {
         font-size: 28px;
       }
@@ -31,7 +45,7 @@
       .wrapper {
         margin-top: 20px;
         .text {
-          width: 155px;
+          width: calc(50% - 13px);
         }
         .lastname {
           margin-left: 20px;
@@ -39,6 +53,9 @@
         .text1 {
           margin-top: 20px;
           width: 335px;
+          @include mobile {
+            width: 100%;
+          }
         }
       }
       .submit {

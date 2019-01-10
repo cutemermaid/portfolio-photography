@@ -30,7 +30,29 @@
     </div>
     <div class="photography-slider-parent">
       <div class="photography-slider">
-        <img class="slider-placeholder" src="./images/slider-placeholder.svg" />
+        <article style="width: 100%;">
+          <ul id="slider-placeholder">
+            <li>
+              <a href="#slide1"
+                ><img
+                  src="images/image-1.jpg"
+                  alt="This is caption 1 <a href='#link'>Even with links!</a>"
+              /></a>
+            </li>
+            <li>
+              <a href="#slide2"
+                ><img src="images/image-2.jpg" alt="This is caption 2"
+              /></a>
+            </li>
+            <li>
+              <a href="#slide3"
+                ><img
+                  src="images/image-4.jpg"
+                  alt="And this is some very long caption for slide 3. Yes, really long."
+              /></a>
+            </li>
+          </ul>
+        </article>
         <div class="parent-blog">
           <div class="blog-roller">
             <div class="blog">
@@ -91,6 +113,7 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="slippry/slippry.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
