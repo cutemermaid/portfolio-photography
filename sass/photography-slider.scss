@@ -11,7 +11,49 @@
   @include tablet {
     padding: 0px 10px;
   }
+  .contactusbutton {
+    display: flex;
 
+    .mapimage {
+      flex: 1;
+    }
+    .user-info {
+      width: 376px;
+      padding: 0 20px;
+      h1 {
+        font-size: 28px;
+      }
+      h3 {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      .wrapper {
+        margin-top: 20px;
+        .text {
+          width: 155px;
+        }
+        .lastname {
+          margin-left: 20px;
+        }
+        .text1 {
+          margin-top: 20px;
+          width: 335px;
+        }
+      }
+      .submit {
+        margin-top: 20px;
+        height: 25px;
+        background: #fdb461;
+        border-radius: 5px;
+        color: #202020;
+        border: none;
+        outline: none;
+        line-height: 23px;
+        cursor: pointer;
+      }
+    }
+  }
   .photography-slider {
     max-width: $desktop-width;
     margin: 0px auto;
