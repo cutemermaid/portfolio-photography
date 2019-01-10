@@ -37,6 +37,10 @@
           display: flex;
           padding-top: 50px;
 
+          .otherinfo {
+            color: #ffffff;
+          }
+
           &:nth-child(1) {
             color: #010101;
           }
@@ -94,6 +98,12 @@
                 margin-top: 20px;
                 line-height: 28px;
               }
+            }
+
+            .pet-blog-image {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
             }
 
             a.links {
